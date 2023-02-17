@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "null"
+    },
+    "content": {
+      "type": "string"
+    },
+    "posted_at": {
+      "type": "string"
+    },
+    "attachment": {
+      "type": "object",
+      "properties": {
+        "file_name": {
+          "type": "string"
+        },
+        "file_type": {
+          "type": "string"
+        },
+        "file_url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "file_name",
+        "file_type",
+        "file_url"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "task_id",
+    "project_id",
+    "content",
+    "posted_at",
+    "attachment"
+  ]
+}
