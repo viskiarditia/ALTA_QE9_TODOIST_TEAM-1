@@ -5,7 +5,7 @@ Feature: Todois Task Feature
   Scenario Outline: Close a task
     Given Close a task with valid <id>
     When Send close a task request
-    Then Status code should be 204 NoContent
+    Then Status code is 204 No Content
     Examples:
       | id         |
       | 6614134187 |

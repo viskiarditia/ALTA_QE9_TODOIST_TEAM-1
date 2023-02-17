@@ -4,7 +4,7 @@ Feature: Todoist Section Feature test
   Scenario Outline: Post update section with valid json
     Given Post update section with valid json with <id>
     When Send post update section request
-    Then Status code update should create be 204 No Content
+    Then Status code is 204 No Content
     Examples:
       | id        |
       | 115885144 |
@@ -13,7 +13,7 @@ Feature: Todoist Section Feature test
   Scenario Outline: Post update section with invalid json
     Given Post update section with invalid id "<id>"
     When Send post update section invalid request
-    Then Status Code should be 400 Bad Request
+    Then Status code should be 400 Bad Request
     Examples:
       | id      |
       | 123asek |

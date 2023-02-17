@@ -5,7 +5,7 @@ Feature: Todois Task Feature
   Scenario Outline: Reopen A Task
     Given Reopen a task with <id>
     When Send Reopen A Task
-    Then Status code should be 204 NoContent
+    Then Status code is 204 No Content
     Examples:
       | id         |
       | 6614134187 |

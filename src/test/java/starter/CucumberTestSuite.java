@@ -9,8 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         tags = "@Task or @Labels or @PositiveCase or @NegativeCase or @Comments or @Tugas",
         plugin = {"pretty"},
-        features = "classpath:features",
-        glue = "starter/feature/steps"
+        features = "classpath:feature"
 )
 public class CucumberTestSuite {
 
